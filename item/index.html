@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jaakko Takalo">
+    <meta name="description" content="A silly little RPG Loot Generator that creates randomized items.">
+    <title>RPG Item Generator v.01</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Kanit:500" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <script src="item.js"></script>
+
+</head>
+
+<body>
+    <h1>RPG Item Generator</h1>
+
+    <div class="container">
+        <div id="itemContainer" class="item-panel-outer run-animation" >
+
+            <p id="name">
+                Brilliant Name of the Weapon
+            </p>
+
+            <div class="item-panel-stats">
+                <p id="stats">
+                    <p id="tier">TIER X</p>
+                    <p id="damage">
+                        <span id="dmgNumber">XXX</span> Physical Damage</p>
+                    <p id="magic">
+                        <span id="magNumber">XXX</span> Magic Damage</p>
+                    <p id="extra"></p>
+                </p>
+            </div>
+            <div class="item-panel-low-left">
+                <p id="stats">
+                    <p id="durability">Durability 100 </p>
+                </p>
+            </div>
+            <div class="item-panel-low-right">
+                <p id="stats">
+                    <p id="lvlreq">Level Requirement 60</p>
+                    <p id="value">Value:
+                        <span id="valueAmt">12332</span>
+                    </p>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button" onclick=GenerateItem()>ROLL</button>
+    </div>
+    <script>
+        window.onload = GenerateItem();
+    </script>
+    
+</body>
+
+</html>

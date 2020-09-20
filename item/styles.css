@@ -1,0 +1,146 @@
+body {
+    background-color: #302c37;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container{
+    height: 270px;
+    margin: 0 auto;
+}
+
+.item-panel-outer{
+    position: relative;
+    width: 350px;
+    height: 240px;
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid rgb(110, 98, 136);
+    background: #211e27;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.05), 0 6px 20px 0 rgba(19, 19, 22, 0.185);
+
+}
+
+#itemContainer
+{
+    /*
+    -webkit-animation: scalediv 0.5s;
+    animation: scalediv 0.5s;
+    */
+}
+@-webkit-keyframes scalediv
+{
+    from {height: 0;}
+    to {height: 240;}
+}
+
+@keyframes scalediv
+{
+    from {height: 0;}
+    to {height: 240;}
+}
+.item-panel-stats{
+    position: absolute;
+    top: 95px;
+    height: 105px;
+    width: 300px;
+    border-radius: 2px;
+    background: rgba(74, 94, 124, 0);
+    text-align: left;
+    color: #e9e2cd;
+    
+}
+
+.item-panel-low-left{
+    position: absolute;
+    text-align: left;
+    bottom: 8px;
+    background: rgba(74, 94, 124, 0);
+    color: #e9e2cd;
+}
+
+.item-panel-low-right
+{
+    position: absolute;
+    text-align: right;
+    bottom: 8px;
+    right:8px;
+    background: rgba(74, 94, 124, 0);
+    color: #e9e2cd;
+}
+h1{
+    color: rgb(103, 103, 145); 
+    text-align: center;
+    vertical-align: middle;
+}
+
+p{
+    margin: 0;
+}
+
+#name{
+    color: #e9e2cd;
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#stats{
+    color: #e9e2cd;
+    font-size: 2em;
+    margin: 0;
+    line-height: 23px;
+}
+
+#tier{
+    color: rgb(238, 193, 96);
+}
+
+#dmgNumber
+{
+    color: rgb(83, 240, 96);
+}
+
+#magNumber
+{
+    color: rgb(83, 240, 96);
+}
+
+#valueAmt
+{
+    color: gold;
+}
+
+.button-container
+{
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.button {
+    border-radius: 1px;
+    width: 200px;
+    height: 70px;
+    margin: 0 auto;
+    display: inline-block;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(245, 241, 230);
+    background-color: #584e6e;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 45px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.05), 0 6px 20px 0 rgba(19, 19, 22, 0.185);
+    transition: 0.2s;
+}
+.button:hover{
+    background-color: #665885;
+    transition: 0.1s;
+}
+.button:active{
+    background-color: #584e6e;
+    transition: 0.1s;
+}
