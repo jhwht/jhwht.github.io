@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Robots>
+	<dialog id='1'>
+		<line id='1'>
+			Hello, my name is Bubbo!
+		</line>
+		<line id='2'>
+			All my friends are off-line. Help me wake them up by collecting some computer parts!
+		</line>
+		<line id='3'>
+			Use the arrow keys to move. Jump by pressing the space bar.
+		</line>
+		<nextdialog>2</nextdialog>
+	</dialog>
+</Robots>
